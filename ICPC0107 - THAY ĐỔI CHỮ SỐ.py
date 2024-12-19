@@ -1,0 +1,7 @@
+n = int(input())
+p, q = map(int, input().split())
+a = input().strip()
+b = input().strip()
+x = min(p,q)
+y = max(p,q)
+print(int(a.replace(str(y),str(x))) + int(b.replace(str(y),str(x))), int(a.replace(str(x),str(y))) + int(b.replace(str(x),str(y))))
